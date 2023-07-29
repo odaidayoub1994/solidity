@@ -14,4 +14,15 @@ contract VariableTypes {
         }
         return false;
     }
+
+    function globalVars() external view returns (address) {
+        // msg.sender is global variable
+        address sender = msg.sender;
+        uint256 validAge = 18;
+        
+        if (myAge >= validAge) {
+            return sender;
+        }
+        return address(1);
+    }
 }
