@@ -1,10 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-// Mapping
-// How to declare a mapping
-// Set, get, delete
-
 contract IterableMapping {
     mapping(address => uint) public balances;
     mapping(address => bool) public inserted;
